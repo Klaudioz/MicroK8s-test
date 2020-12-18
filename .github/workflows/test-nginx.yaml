@@ -20,4 +20,4 @@ jobs:
         kubectl apply -f ${{ github.workspace }}/deploy/nginx.yaml
         kubectl expose deployment nginx-deployment --name nginx-srv2 --cluster-ip=10.152.183.210
         kubectl rollout status deployment/nginx-deployment
-        curl 10.152.183.210 | grep nginx
+        curl 10.152.183.210 | grep blabla
